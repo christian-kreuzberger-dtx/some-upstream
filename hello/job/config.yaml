@@ -1,0 +1,12 @@
+apiVersion: v2
+actions:
+  - name: "Demo Task"
+    events:
+      - name: "sh.keptn.event.my-task.triggered"
+    tasks:
+      - name: "Greetings"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - "Hello World"
